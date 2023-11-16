@@ -51,6 +51,5 @@ private:
 	std::atomic_int _connectionCnt; // 记录连接所创建的connection连接的总数量 
 	std::condition_variable cv; // 设置条件变量，用于连接生产线程和连接消费线程的通信
 	std::atomic_bool _isRuning; // 连接池运行状态
-	std::condition_variable _cv; // 设置条件变量，用于连接生产线程和连接消费线程的通信
 
 };
